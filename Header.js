@@ -1,3 +1,29 @@
+import React, {Component, Fragment} from 'react';
+import logo1 from '../images/logo.jpg';
+
+import M from 'materialize-css/dist/js/materialize.min.js';
+
+const ps = { 
+  fontSize : '20px'
+}
+
+//        <li><a href="/about" className="cyan-text text-lighten-4" style = {ps}>About Us</a></li>
+//        <li><a href="/about">About Us</a></li>
+
+class Header extends Component {
+	
+componentDidMount(){
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+
+			}
+
+	render(){
+
+		return(	
 <Fragment>
       <br/>
       <br/>
@@ -26,3 +52,12 @@
       </div>
       </div>
       </Fragment>
+                   )
+	}
+}
+
+
+
+export default Header;
+
+
