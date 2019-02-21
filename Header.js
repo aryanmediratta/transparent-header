@@ -1,5 +1,4 @@
 import React, {Component, Fragment} from 'react';
-import logo1 from '../images/logo.jpg';
 
 import M from 'materialize-css/dist/js/materialize.min.js';
 
@@ -25,11 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		return(	
 <Fragment>
-      <br/>
-      <br/>
       <div className = "row">
       <div className = "col s6 m2 l2">
-      <a href="/" className="brand-logo cyan-text text-lighten-4 left" style = {ps}>Delhii Grill</a>
+      <a href="/" className="brand-logo cyan-text text-lighten-4 left" style = {ps}>Brand Name</a>
       </div>
       <div className = "col s5 m10 l10">
       <div className="right">
