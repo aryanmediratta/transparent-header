@@ -2,7 +2,7 @@ import React, {Component, Fragment} from 'react';
 
 import M from 'materialize-css/dist/js/materialize.min.js';
 
-const ps = { 
+const ps = {
   fontSize : '20px'
 }
 
@@ -10,7 +10,7 @@ const ps = {
 //        <li><a href="/about">About Us</a></li>
 
 class Header extends Component {
-	
+
 componentDidMount(){
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	render(){
 
-		return(	
+		return(
 <div>
       <Fragment>
       <div className = "row">
@@ -33,16 +33,16 @@ document.addEventListener('DOMContentLoaded', function() {
       <div className="right">
               <div className = "hide-on-small-only">
 
-           <a href="/menu" className="black-text" style = {ps}>Menu</a>
+           <a href="/tab 1" className="black-text" style = {ps}>tab 1</a>
            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="/contact" className="black-text" style = {ps}>Contact Us</a>
+          <a href="/contact" className="black-text" style = {ps}>tab 2</a>
         </div>
         <div className = "hide-on-med-and-up">
-          <a href="#" data-target="mobile-demo" className="right sidenav-trigger black-text" ><i className="material-icons">menu</i></a>
+          <a href="#" data-target="mobile-demo" className="right sidenav-trigger black-text" ><i className="material-icons">tab 1</i></a>
   <ul className = "sidenav" id="mobile-demo">
         <li><a href = "/">Home</a></li>
-        <li><a href = "/menu">Menu</a></li>
-        <li><a href = "/contact">Contact Us</a></li>
+        <li><a href = "/tab 1">tab 1</a></li>
+        <li><a href = "/contact">tab 2</a></li>
   </ul>
             </div>
       </div>
@@ -59,5 +59,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 export default Header;
-
-
